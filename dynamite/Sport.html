@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <title>Dynamite/Sport</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+   
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <style type="text/css">
+    #testo
+    {
+        text-align: Center;
+        color: #FF0000;
+        font: Bold 25px Verdana;
+    }
+    </style>
+
+   <script type="text/javascript">
+    var i = 0;
+    function scrivi()
+    {
+        var ID = document.getElementById("testo");
+        ID.insertAdjacentText("beforeEnd", temp.charAt(i));
+        if (i < temp.length - 1)
+        {
+            i++;
+            setTimeout("scrivi()", 100);
+        }
+    }
+    function inizio()
+    {
+        var ID = document.getElementById("testo");
+        temp = ID.innerHTML;
+        ID.innerHTML = "";
+        scrivi();
+    }
+    </script>
+</head> 
+
+<body onload="inizio();">
+<!-- ----------------------HEADER---------------->
+
+<header class="header clearfix"> 
+    <a href="index.html"><img class="header__logo" src="img/logo.jpg" height=65 width=65></a>
+    <a href="" class="header__icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="index.html">Home</a></li>
+        <li class="separatore"> | </li>
+        <li class="header__menu__item"><a href="Sport.html">Sport</a></li>
+        <li class="separatore"> | </li>
+        <li class="header__menu__item"><a href="">Trainers</a></li>
+        <li class="separatore"> | </li>
+        <li class="header__menu__item"><a href="">Abbonamenti</a></li>
+        <li class="separatore"> | </li>
+        <li class="header__menu__item"><a href="">Contatti</a></li>
+        <li class="separatore"> | </li>
+        <li class="header__menu__item"><a href="">Novità</a></li>
+    </ul>
+</header>
+
+<!-- ----------------------COVER---------------->
+
+<section class="cover__interna">
+    <div class="cover__filter">
+    </div>
+    <div class="cover__caption">
+        <div id="testo" class="cover__caption__copy">
+             Scegli lo sport che preferisci
+        </div>
+    </div>
+</section>
+
+<!-- ----------------------CARDS---------------->
+
+<section class="cards clearfix">
+    
+   <div class="card image__container">
+        <img  src="img/nuoto.jpg"  width=400; height=260; alt="card1_1" >
+        <div class="image__caption caption">
+            <a href="pag_interne/nuoto.html"><h2>Nuoto</h2></a>
+        </div>
+    </div>  
+
+    <div class="card image__container">
+        <img  src="img/acquagym.jpg"  width=400; height=260; alt="card1_1">
+        <div class="image__caption caption">
+            <a href="pag_interne/acquagym.html"><h2>Acquagym</h2></a>
+        </div>
+    </div>  
+
+    <div class="card image__container">
+        <img  src="img/karate.jpg"  width=400; height=260; alt="card1_1">
+        <div class="image__caption caption">
+            <h2>Karate</h2>
+        </div>
+    </div>  
+
+
+</section>
+
+<section class="cards clearfix">
+
+    <div class="card image__container">
+        <img  src="img/kickboxing.jpg"  width=400; height=260; alt="card1_1">
+        <div class="image__caption caption">
+            <h2>Kickboxing</h2>
+        </div>
+    </div>  
+    
+    <div class="card image__container">
+        <img  src="img/ju_jitsu.jpg"  width=400; height=260; alt="card1_1">
+        <div class="image__caption caption">
+            <h2>Ju-jitsu</h2>
+        </div>
+    </div>  
+
+    <div class="card image__container">
+        <img  src="img/pilates.jpg"  width=400; height=260; alt="card1_1">
+        <div class="image__caption caption">
+            <h2>Fitness</h2>
+        </div>
+    </div>  
+
+
+</section>
+
+<section class="banner clearfix">
+    <div class="banner__copy">
+        <div class="banner__copy__text">
+            <h3> Tutti i nostri corsi:</h3>
+            <ul class="elenco__corsi">
+                <li>Piscina</li>
+                    <ul>
+                        <li><a href="">Acquagym</a></li>
+                        <li><a href="">Corsi di nuoto</a></li>
+                    </ul>
+                <li>Arti marziali</li>
+                    <ul>
+                        <li><a href="">Kickboxing</a></li>
+                        <li><a href="">Karate</a></li>
+                        <li><a href="">Ju-jitsu</a></li>
+                     </ul>
+                <li>Fitness</li>
+                     <ul>
+                        <li><a href="">Pilates</a></li>
+                        <li><a href="">Fit-boxe</a></li>
+                        <li><a href="">Zumba</a></li>
+                        <li><a href="">Total Workout</a></li>
+                        <li><a href="">Ginnastica dolce</a></li>
+                    </ul>
+            </ul>  
+        </div>
+    </div>
+</section>
+
+
+<!-- ----------------------FOOTER---------------->
+
+<footer class="footer">
+    <div>
+    <!-- Icone Social Network - Inizio -->
+    <table cellpadding='0' cellspacing='0'>
+        <tr> 
+            <td style='padding: 6px 8px'>
+            <a href="https://www.facebook.com/dynamitepolisportiva/photos/?ref=page_internal";  rel='nofollow' target='_blank' title='Condividi su Facebook'><img src='https://lh3.googleusercontent.com/-RSUcXlDOlJw/WS0ciCGtDoI/AAAAAAAA80M/yTi-TKJqfOEpMigNI9a01KUEsEFDZjZmQCHM/s720/facebook.png' width='48'/></a>
+            </td>
+            <td style='padding: 6px 8px'>
+            <a href="https://www.instagram.com/dynamiteteamcremona/";  rel='nofollow' target='_blank' title='Condividi su Facebook'><img src='https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300' width='48'/></a>
+            </td>
+            <td style='padding: 6px 8px'>
+            <a href="https://goo.gl/maps/d6pW53PBQUCcZAhK6";  rel='nofollow' target='_blank' title='Condividi su Facebook'><img src='img/maps.jpg' width='48'/></a>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div>
+        © Dynamite Team SSD a RL- Via Gaspare Pedone 20 - 26100 Cremona
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

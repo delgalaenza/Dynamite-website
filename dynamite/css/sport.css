@@ -1,0 +1,14 @@
+
+.cover__sport__nuoto{
+    margin: 0 auto;
+    height: 60%; 
+    width:60%;
+    background-image: url("../img/nuoto_cover.jpg");
+    background-size: cover;
+    background-position:center center;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    position:relative;
+    z-index:0;
+    /*filter: brightness(150%); -webkit-filter: brightness(150%);*/
+}
